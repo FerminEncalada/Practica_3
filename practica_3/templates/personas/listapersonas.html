@@ -57,13 +57,6 @@
             <div class="ml-3 d-flex align-items-center">
                 <label for="metodo_busqueda" class="mr-2"></label>
                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                    <label class="btn btn-outline-secondary active">
-                        <input type="radio" name="metodo_busqueda" id="binario" value="binario" autocomplete="off"
-                            checked> Binaria
-                    </label>
-                    <label class="btn btn-outline-secondary">
-                        <input type="radio" name="metodo_busqueda" id="lineal" value="lineal" autocomplete="off"> Lineal
-                    </label>
                 </div>
             </div>
         </form>
@@ -115,7 +108,7 @@
                     <td>
                         <div class="d-flex">
                             <a href="/personas/editar/{{ item.id }}" class="btn btn-sm me-2"
-                                style="background-color: #286ed6; color: white; border: none; padding: 5px 10px; border-radius: 2px;">MODIFICAR</a>
+                                style="background-color: hsl(216, 100%, 28%); color: white; border: none; padding: 5px 10px; border-radius: 2px;">MODIFICAR</a>
                             <form id="eliminar_form_{{ item.id }}" action="/personas/eliminar/{{ item.id }}"
                                 method="POST">
                                 <button type="submit" class="btn btn-sm"
